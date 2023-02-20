@@ -1,37 +1,97 @@
 import './style.css'
 
-const lessEl = document.getElementById('article-listings-less')
+const barsEl = document.getElementById('collapsed-nav');
+const blogFour = document.getElementById('blog-four');
+const blogFive = document.getElementById('blog-five');
+const blogSix = document.getElementById('blog-six');
 const moreEl = document.getElementById('article-listings-more');
+const lessEl = document.getElementById('article-listings-less')
+let windowWidth = window.innerWidth
+let desktopSize = windowWidth >= 1085 ? true : false
+let isCollapsed = true;
 
-function toggleHidden(elem){
-  console.log(elem)
-  elem.classList.toggle('hidden')
+function setWindowSize(){
+  windowWidth = window.innerWidth;
 }
 
-function toggleBlogs(){
-  toggleHidden(document.getElementById('blog-four'))
-  toggleHidden(document.getElementById('blog-five'))
-  toggleHidden(document.getElementById('blog-six'))
+function setElemToBlock(elem){
+  elem.style.display = 'block';
+}
+
+function setElemToNone(elem){
+  elem.style.display = 'none';
+}
+
+function setElemToGrid(elem){
+  elem.style.display = "grid"
+}
+
+function checkForScreenFlip(){
+  if(windowWidth < 1085 && desktopSize){
+    setMobileVariables()
+    desktopSize = false;
+  } else if(windowWidth > 1084 && !desktopSize){
+    setDesktopVariables()
+    desktopSize = true;
+  } else {
+    //breakpoint has not changed
+  }
+}
+
+function setMobileVariables(){
+  if(blogFour){
+    displayLessBlogs()
+    setElemToNone(lessEl);
+    setElemToBlock(moreEl);
+  }
+}
+
+function setDesktopVariables(){
+  setElemToNone(document.getElementById('collapsed-nav'))
+  if(blogFour){
+    setElemToGrid(blogFour);
+    setElemToGrid(blogFive);
+    setElemToGrid(blogSix);
+    setElemToNone(lessEl);
+    setElemToNone(moreEl);
+  } 
+}
+
+function displayMoreBlogs(){
+  setElemToBlock(blogFour)
+  setElemToBlock(blogFive)
+  setElemToBlock(blogSix)
+}
+
+function displayLessBlogs(){
+  setElemToNone(blogFour);
+  setElemToNone(blogFive);
+  setElemToNone(blogSix);
 }
 
 document.addEventListener('click', (e)=>{
   if(e.target.dataset.bars){
-    toggleHidden(document.getElementById(e.target.dataset.bars))
-  } else if(e.target.dataset.hero){
+   if(isCollapsed){
+    setElemToBlock(barsEl)
+    isCollapsed = !isCollapsed;
+   } else {
+    setElemToNone(barsEl)
+    isCollapsed = !isCollapsed;
+   }
+  } else if (e.target.dataset.hero){
     window.location.href = '/post.html'
-  } else if(e.target.dataset.more){
-    toggleBlogs()
-    
-    lessEl.classList.add('block')
-    lessEl.classList.remove('hidden')
-    moreEl.classList.remove('block')
-    toggleHidden(moreEl)
+  } else if (e.target.dataset.more){
+    displayMoreBlogs()
+    setElemToNone(moreEl);
+    setElemToBlock(lessEl);
   } else if (e.target.dataset.less){
-    toggleBlogs()
-
-    moreEl.classList.add('block')
-    moreEl.classList.remove('hidden')
-    lessEl.classList.remove('block')
-    toggleHidden(lessEl)
+    displayLessBlogs();
+    setElemToNone(lessEl);
+    setElemToBlock(moreEl);
   }
 })
+
+window.addEventListener("resize", (e)=>{
+  setWindowSize()
+  checkForScreenFlip()
+});

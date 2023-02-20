@@ -54,10 +54,6 @@ table {
 }
 
 /*----Utility Classes ----*/
-.hidden{
-  display:none;
-}
-
 button{
   all:unset;
 }
@@ -100,10 +96,6 @@ button{
 
 .XXXVpt{
   font-size: var(--35pt);
-}
-
-.block{
-  display:block;
 }
 
 .margin-center{
@@ -153,11 +145,12 @@ button{
   justify-self: end;
 }
 
-.--nav-home-link{
+.--navigation-links{
   display:none;
 }
 
 .--collapsed-nav{
+  display:none;
   text-align:center;
   margin:0 1em;
 }
@@ -267,6 +260,17 @@ button{
   padding:2.25em 0;
 }
 
+.--article-listings-more{
+  display:block;
+}
+
+.--blog-four,
+.--blog-five,
+.--blog-six,
+.--article-listings-less{
+  display:none;
+}
+
 .--article{
   margin-bottom:3.4167em;
 }
@@ -300,16 +304,114 @@ footer{
 
   .--hero-section{
     grid-template-columns: 2.833em 100px auto 2.833em;
+    grid-template-rows:250px auto auto;
   }
 
   .--nav-toggle{
     display:none;
   }
 
-  .--nav-home-link{
+  .--navigation-links{
     display:inline;
     text-decoration: none;
     color:#090909;
     cursor: pointer;
+  }
+
+  .--about-section{
+    display:grid;
+    grid-template-columns: 236px auto;
+    grid-template-rows:150px auto;
+  }
+
+  .--avatar-img{
+    grid-column: 1/2;
+    grid-row:1/3;
+  }
+
+  .--about-title{
+    align-self: end;
+    grid-column:2/3;
+    grid-row:1/2;
+  }
+
+  .--about-body{
+    grid-column: 2/3;
+    grid-row:2/3;
+  }
+
+  .--journey-section{
+    padding:0 9.083em;
+  }
+
+  .--post-hero-section{
+    display:grid;
+    grid-template-columns: 1em 8.083em auto 8.083em 1em;
+    grid-template-rows:auto auto auto auto;
+  }
+
+  .--post-section-date{
+    grid-column: 3/4;
+    grid-row:1/2;
+  }
+
+  .--post-section-title{
+    grid-column: 3/4;
+    grid-row:2/3;
+    max-width: unset;
+  }
+
+  .--post-section-body{
+    grid-column: 3/4;
+    grid-row:3/4;
+    max-width: unset;
+  }
+
+  .--post-section-img{
+    grid-column: 2/5;
+
+  }
+
+  .--article-listings{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(309px, 1fr));
+    grid-template-rows:1fr 1fr;
+    margin:1em 2.83em 1em;
+    gap:2.1667em;
+  }
+
+  .--recent-post-grid{
+    grid-template-rows: 54px auto;
+  }
+
+  .--recent-posts-title{
+    grid-column:1/-1;
+  }
+
+  .--article{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1em minmax(232px, 1fr) auto auto auto 1em;
+  }
+
+  .--article-img{
+    grid-row: 2/3;
+  }
+
+  .--article-date{
+    grid-row:3/4;
+  }
+
+  .--article-title{
+    grid-row:4/5;
+  }
+
+  .--article-body{
+    grid-row:5/6;
+  }
+
+  .--article-listings-more,
+  .--article-listings-less{
+    display:none;
   }
 }
