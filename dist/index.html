@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPRSURBVHgBxVhLSFRhFD7zgPH9QDN1wAcjKolSQcgg2lQGoYseukmjaFkugojAhZsWgQ+kwk1kIbRqIaSIVgg+IXQjbpygFJVCfNbMOOPoqLfv/DqDytzxTnZnPvjnP/e/Z87/zfnPOffM1VAQSAA8Hs9NnU53QZKkcoxoLJ/SaDQ6zL8xlrE2hXkIen2bm5vfg7GvUaIUExNThg0fYaNKzAZSjiGMDofD0aFEOSCZyMhII7zwEgSq6GT4hh9Stb6+PhVISSd3A96oBpFPIHKeTo5k2HkQERGhwdENUTBkYmNjn+DLbyBG0P8Dn4LFYDCYtra2PsopHEJcXFwDXPqM1EU34uj60cVDnomOjr4Lj7wi9ZGHI4vDkX05uOjzDLI2a3t7ewhkMihEwF7X7Hb7Z++11iuAyPNQEmEgHF6npaVFea/FMSFgzSDygkKPBByVGwE9zBdezzykMAFOeEz74aKBV5IxL2DoKUzQarVXbTZbvxbMKsJJhLG7u1srSCGILlH4UcofTOYshR8m1LhUDuDTpDJKS0upvLw8oA5KSxQHsIdUjBmTyUQTExNCrqiooNHRUZIhY2bPaElFIDh9cklJiaweOgQDE1klFYGC5pORwrJ6IG3nu05SERaLxSfPz8/L6iGRljibxkklpKenU319vZD5uEZGRuRUFzY2Nn4xma+kAH19fWS1Wik3N1eJOqWkpFBnZydlZOw9e9va2gJ5ZpI/tHq9vvs4w9nZ2SL4jEYjNTc3E7q1gPo1NTU0ODhIBQUFeztNTlJjY6OsPrz2nmfxgEJ6D2CyBNqgp6eHysrKhDw9PU1NTU0iZWdmZrgXopycHCouLhZE8vLyfN8bGxuj2tpaWlpa8msXJ+OCQ4x/ALGA5vsWCEmBRmFhoTQ3NycpBZomqaWlRUpMTJSOsf3WS0z0M0g/K1xfDTFFzjNMnL0THx9PRUVFcmqEpy+1t7dTXV0ddXV1HaozfmDHn73bKHjCK962kyvxDOYsUoDMzEwym82iujI5ZAKtra2J2BgfHyeXy0UK8RSNebP3QpCBwSv4Bf0UWvSCSOXBBVESQeQOhRazGPeOLvIDUvy5otBhFnFy0e12rxy9oUUmcWOTRaHBMB6I50DEb/XTo+28TyqDawlGg9PpbA2kxzFT6WedU60VBi4jyPSIKe7gZyl42NjOzs5O/nFEGJzSVsz5+wTegUAPXl0M+FOG7g1M/HqE30yckbG5ChvD8HgvateHlZUVBymEBr0nt52piJ0fi4uLitsJEEvCpqkQk7CxhHkZxcuJmvMTskT/gL/h1bTRBYkM1AAAAABJRU5ErkJggg==" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Journal</title>
+    <script type="module" crossorigin src="/LearningJournal/assets/index-b66c5468.js"></script>
+    <link rel="stylesheet" href="/LearningJournal/assets/index-b165bb7d.css">
+  </head>
+  <body>
+    <div id="app">
+      <header id="header" class="--header">
+        <img  id="header-logo" class="--header-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPRSURBVHgBxVhLSFRhFD7zgPH9QDN1wAcjKolSQcgg2lQGoYseukmjaFkugojAhZsWgQ+kwk1kIbRqIaSIVgg+IXQjbpygFJVCfNbMOOPoqLfv/DqDytzxTnZnPvjnP/e/Z87/zfnPOffM1VAQSAA8Hs9NnU53QZKkcoxoLJ/SaDQ6zL8xlrE2hXkIen2bm5vfg7GvUaIUExNThg0fYaNKzAZSjiGMDofD0aFEOSCZyMhII7zwEgSq6GT4hh9Stb6+PhVISSd3A96oBpFPIHKeTo5k2HkQERGhwdENUTBkYmNjn+DLbyBG0P8Dn4LFYDCYtra2PsopHEJcXFwDXPqM1EU34uj60cVDnomOjr4Lj7wi9ZGHI4vDkX05uOjzDLI2a3t7ewhkMihEwF7X7Hb7Z++11iuAyPNQEmEgHF6npaVFea/FMSFgzSDygkKPBByVGwE9zBdezzykMAFOeEz74aKBV5IxL2DoKUzQarVXbTZbvxbMKsJJhLG7u1srSCGILlH4UcofTOYshR8m1LhUDuDTpDJKS0upvLw8oA5KSxQHsIdUjBmTyUQTExNCrqiooNHRUZIhY2bPaElFIDh9cklJiaweOgQDE1klFYGC5pORwrJ6IG3nu05SERaLxSfPz8/L6iGRljibxkklpKenU319vZD5uEZGRuRUFzY2Nn4xma+kAH19fWS1Wik3N1eJOqWkpFBnZydlZOw9e9va2gJ5ZpI/tHq9vvs4w9nZ2SL4jEYjNTc3E7q1gPo1NTU0ODhIBQUFeztNTlJjY6OsPrz2nmfxgEJ6D2CyBNqgp6eHysrKhDw9PU1NTU0iZWdmZrgXopycHCouLhZE8vLyfN8bGxuj2tpaWlpa8msXJ+OCQ4x/ALGA5vsWCEmBRmFhoTQ3NycpBZomqaWlRUpMTJSOsf3WS0z0M0g/K1xfDTFFzjNMnL0THx9PRUVFcmqEpy+1t7dTXV0ddXV1HaozfmDHn73bKHjCK962kyvxDOYsUoDMzEwym82iujI5ZAKtra2J2BgfHyeXy0UK8RSNebP3QpCBwSv4Bf0UWvSCSOXBBVESQeQOhRazGPeOLvIDUvy5otBhFnFy0e12rxy9oUUmcWOTRaHBMB6I50DEb/XTo+28TyqDawlGg9PpbA2kxzFT6WedU60VBi4jyPSIKe7gZyl42NjOzs5O/nFEGJzSVsz5+wTegUAPXl0M+FOG7g1M/HqE30yckbG5ChvD8HgvateHlZUVBymEBr0nt52piJ0fi4uLitsJEEvCpqkQk7CxhHkZxcuJmvMTskT/gL/h1bTRBYkM1AAAAABJRU5ErkJggg==" alt="Learning Journal Logo">
+        <span id="logo-span" class="--header-logo-span bold roboto XIIIpt">My learning journal</span>
+        <nav id="navigation" class="--navigation">
+          <i id="nav-toggle" class="fa-solid fa-bars --nav-toggle" data-bars="collapsed-nav"></i>
+          <a id="nav-home-link" class="--navigation-links --nav-link XVIpt semi-bold source" href="/index.html">Home</a>
+          <a id="nav-about-link" class="--navigation-links --nav-link XVIpt semi-bold source" href="/about.html">About Me</a>
+        </nav>
+      </header>
+      <div id="collapsed-nav" class="--collapsed-nav">
+        <ul>
+          <li>
+            <a id="collapsed-home-link" class="--nav-link XVIpt semi-bold source" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a id="collapsed-about-link" class="--nav-link XVIpt semi-bold source" href="/about.html">About Me</a>
+          </li>
+        </ul>
+      </div>
+      <main id="home-main-content" class="--home-main-content">
+        <section id="hero-section" class="--hero-section">
+          <img id="hero-img" class="--hero-img --fit-img" src="/LearningJournal/assets/blog-image-hero-8fda97a9.png" alt="picture of laptop on desk by window looking out at the city at dusk" data-hero="post">
+          <p id="hero-section-date" class="--hero-section-date" data-hero="post">July 23, 2022</p>
+          <h1 id="hero-section-title" class="--hero-section-title bold XXXIIpt source" data-hero="post">My new journey as a bootcamp student</h1>
+          <p id="hero-section-body" class="--hero-section-body XVIpt source" data-hero="post">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+        </section>
+        <section id="article-listings" class="--article-listings">
+          <article id="blog-one" class="--article">
+            <img id="blog-one-img" class="--article-img --fit-img" src="/LearningJournal/assets/blog-image-01-431c27ee.png" alt="picture of laptop on desk">
+            <p id="blog-one-date" class="--article-date XIVpt source">July 23, 2022</p>
+            <h1 id="blog-one-title" class="--article-title XXIVpt source bold">Blog One</h1>
+            <p id="blog-one-body" class="--article-body XVIpt source">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+          </article>
+          <article id="blog-two" class="--article">
+            <img id="blog-two-img" class="--article-img --fit-img" src="/LearningJournal/assets/blog-image-02-bc092c5e.png" alt="picture of laptop on desk">
+            <p id="blog-two-date" class="--article-date XIVpt source">July 23, 2022</p>
+            <h1 id="blog-two-title" class="--article-title XXIVpt source bold">Blog Two</h1>
+            <p id="blog-two-body" class="--article-body XVIpt source">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+          </article>
+          <article id="blog-three" class="--article">
+            <img id="blog-three-img" class="--article-img --fit-img" src="/LearningJournal/assets/blog-image-03-7e328c6b.png" alt="picture of laptop on desk">
+            <p id="blog-three-date" class="--article-date XIVpt source">July 23, 2022</p>
+            <h1 id="blog-three-title" class="--article-title XXIVpt source bold">Blog Three</h1>
+            <p id="blog-three-body" class="--article-body XVIpt source">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+          </article>
+          <button id="article-listings-more" class="--article-listings-more margin-center btn source XVIpt bold underline" data-more="more">View More</button>
+          <article id="blog-four" class="--article --blog-four">
+            <img id="blog-four-img" class="--article-img --fit-img" src="/LearningJournal/assets/blog-image-04-b3187fe3.png" alt="picture of laptop on desk">
+            <p id="blog-four-date" class="--article-date XIVpt source">July 23, 2022</p>
+            <h1 id="blog-four-title" class="--article-title XXIVpt source bold">Blog Four</h1>
+            <p id="blog-four-body" class="--article-body XVIpt source">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+          </article>
+          <article id="blog-five" class="--article --blog-five">
+            <img id="blog-five-img" class="--article-img --fit-img" src="/LearningJournal/assets/blog-image-05-1869676e.png" alt="picture of laptop on desk">
+            <p id="blog-five-date" class="--article-date XIVpt source">July 23, 2022</p>
+            <h1 id="blog-five-title" class="--article-title XXIVpt source bold">Blog Five</h1>
+            <p id="blog-five-body" class="--article-body XVIpt source">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+          </article>
+          <article id="blog-six" class="--article --blog-six">
+            <img id="blog-six-img" class="--article-img --fit-img" src="/LearningJournal/assets/blog-image-06-432260af.png" alt="picture of laptop on desk">
+            <p id="blog-six-date" class="--article-date XIVpt source">July 23, 2022</p>
+            <h1 id="blog-six-title" class="--article-title XXIVpt source bold">Blog Six</h1>
+            <p id="blog-six-body" class="--article-body XVIpt source">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+          </article>
+          <button id="article-listings-less" class="--article-listings-less margin-center btn source XVIpt bold underline" data-less="less">View Less</button>
+        </section>
+      </main>
+      <footer class="text-center">
+        <p id="footer-title" class="--footer-title bold source">My Learning Journal</p>
+        <p id="footer-copyright" class="--footer-copyright source">Copyright ©2022</p>
+      </footer>
+    </div>
+    
+  </body>
+</html>
