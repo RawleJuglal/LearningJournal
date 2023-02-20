@@ -79,7 +79,7 @@ document.addEventListener('click', (e)=>{
     isCollapsed = !isCollapsed;
    }
   } else if (e.target.dataset.hero){
-    window.location.href = '/post.html'
+    window.location.href = '/LearningJournal/post.html'
   } else if (e.target.dataset.more){
     displayMoreBlogs()
     setElemToNone(moreEl);
