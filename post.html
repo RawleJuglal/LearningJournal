@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Journal - Post</title>
+  </head>
+  <body>
+    <div id="app">
+      <header id="header" class="--header">
+        <img  id="header-logo" class="--header-logo" src="/images/logo.png" alt="Learning Journal Logo">
+        <span id="logo-span" class="--header-logo-span bold roboto XIIIpt">My learning journal</span>
+        <nav id="navigation" class="--navigation">
+          <i id="nav-toggle" class="fa-solid fa-bars --nav-toggle" data-bars="collapsed-nav"></i>
+          <a id="nav-home-link" class="--navigation-links --nav-link XVIpt semi-bold source" href="/index.html">Home</a>
+          <a id="nav-about-link" class="--navigation-links --nav-link XVIpt semi-bold source" href="/about.html">About Me</a>
+        </nav>
+      </header>
+      <div id="collapsed-nav" class="--collapsed-nav">
+        <ul>
+          <li>
+            <a id="collapsed-home-link" class="--nav-link XVIpt semi-bold source" href="/index.html">Home</a>
+          </li>
+          <li>
+            <a id="collapsed-about-link" class="--nav-link XVIpt semi-bold source" href="/about.html">About Me</a>
+          </li>
+        </ul>
+      </div>
+        <main id="post-main-content" class="--post-main-content">
+            <section id="hero-section" class="--post-hero-section">
+                <p id="post-hero-section-date" class="--post-section-date source">July 23, 2022</p>
+                <h1 id="post-hero-section-title" class="--post-section-title XXXIIpt source bold">My new journey as a bootcamp student</h1>
+                <p id="post-hero-section-body" class="--post-section-body XVIpt source">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+                <img id="post-hero-section-img" class="--post-section-img --fit-img" src="images/blog-image-hero.png" alt="picture of laptop on desk by window looking out at the city at dusk">
+            </section>
+            <section id="journey-section" class="--journey-section">
+              <h2 id="journey-title-learning" class="--journey-title bold source XVIpt">How I stay committed to learning</h2>
+              <p id="journey-para-one" class="--journey-para source XVIpt">I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
+              <p id="journey-para-two" class="--journey-para source XVIpt">While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world.</p>
+              <h2 id="journey-title-started" class="--journey-title bold source XVIpt">How I got started</h2>
+              <p id="journey-para-three" class="--journey-para source XVIpt">I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words.</p>
+              <p id="journey-para-four" class="--journey-para source XVIpt">That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.</p>
+          </section>
+          <section id="article-listings" class="--article-listings  --recent-post-grid">
+            <h1 id="recent-posts-title" class="--recent-posts-title bold XVIpt source text-center">Recent Posts</h1>
+            <article id="blog-one" class="--article">
+              <img id="blog-one-img" class="--article-img --fit-img" src="/images/blog-image-01.png" alt="picture of laptop on desk">
+              <p id="blog-one-date" class="--article-date XIVpt source">July 23, 2022</p>
+              <h1 id="blog-one-title" class="--article-title XXIVpt source bold">Blog One</h1>
+              <p id="blog-one-body" class="--article-body XVIpt source">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+            </article>
+            <article id="blog-two" class="--article">
+              <img id="blog-two-img" class="--article-img --fit-img" src="/images/blog-image-02.png" alt="picture of laptop on desk">
+              <p id="blog-two-date" class="--article-date XIVpt source">July 22, 2022</p>
+              <h1 id="blog-two-title" class="--article-title XXIVpt source bold">Blog Two</h1>
+              <p id="blog-two-body" class="--article-body XVIpt source">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+            </article>
+            <article id="blog-three" class="--article">
+              <img id="blog-three-img" class="--article-img --fit-img" src="/images/blog-image-03.png" alt="picture of laptop on desk">
+              <p id="blog-three-date" class="--article-date XIVpt source">July 21, 2022</p>
+              <h1 id="blog-three-title" class="--article-title XXIVpt source bold">Blog Three</h1>
+              <p id="blog-three-body" class="--article-body XVIpt source">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+            </article>
+          </section>
+        </main>
+        <footer class="text-center">
+          <p id="footer-title" class="--footer-title bold source">My Learning Journal</p>
+          <p id="footer-copyright" class="--footer-copyright source">Copyright ©2022</p>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>  
+  </body>
+</html>
